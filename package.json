@@ -1,0 +1,32 @@
+{
+    "name": "ql_lib_ts",
+    "private": true,
+    "version": "0.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "npm run watch",
+        "build": "gulp 编译ts",
+        "watch": "gulp 持续编译ts",
+        "watch_vsc": "tsc -w",
+        "test": "gulp 测试",
+        "test_nyc": "gulp 测试并生成覆盖率报告",
+        "clean": "gulp 清理一切",
+        "pub": "gulp 发布到npm"
+    },
+    "author": "",
+    "devDependencies": {
+        "@istanbuljs/nyc-config-typescript": "^1.0.1",
+        "@lsby/exec_cmd": "^0.0.11",
+        "@lsby/js_tools": "^0.0.16",
+        "@types/mocha": "^8.2.2",
+        "@types/node": "^16.11.7",
+        "better-opn": "^3.0.0",
+        "gulp": "^4.0.2",
+        "mocha": "^9.1.3",
+        "nyc": "^15.1.0",
+        "ts-mocha": "^8.0.0",
+        "typescript": "^4.4.3"
+    },
+    "dependencies": {}
+}
