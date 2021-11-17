@@ -27,8 +27,6 @@ exports.清理一切 = async function 清理一切() {
     console.log('ok')
 }
 exports.发布到npm = async function 发布到npm() {
-    await exports.测试()
-
     process.stdout.write('发布到npm...')
     var r = await exec(`npm publish --access=public`, { cwd: path.resolve(__dirname, '.') })
 
